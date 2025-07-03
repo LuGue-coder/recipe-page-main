@@ -34,11 +34,14 @@ body{
 }
 
 .container{
-    max-width:60vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 736px;
     height: auto;
     border-radius: 1vw;
     background-color: var(--white);
-    padding: 1rem;
+    padding: 2rem;
+    margin-top: 9rem;
 }
 
 img{
