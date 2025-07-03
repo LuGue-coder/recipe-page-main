@@ -1,0 +1,100 @@
+
+
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-family:Young-serif ;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf)
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vw;
+    min-width: 100vw; 
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--stone-100);
+    font-family: Outfit;
+    font-size: 16px;
+    color:var(--stone-600);
+}
+
+.container{
+    max-width:60vw;
+    height: auto;
+    border-radius: 1vw;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+img{
+    width:100%;
+    border-radius: 1vw;
+}
+h1{
+    font-family: Young-serif;
+    font-weight: 400px;
+    color:var(--brown-800);
+    font-size:24px;
+}
+#main-title{
+    color:var(--stone-900);
+}
+table{
+    width:100%;
+}
+#nutritiontitle{
+    font-size: 24px;
+}
+#preparationtime{
+    font-family: Outfit;
+    font-size:20px;
+    color:var(--rose-800);
+}
+.preparation{
+    background-color: var(--rose-50);
+    padding: 0.5rem;
+}
+.border{
+    border-bottom: solid;
+    border-color: var(--stone-150);
+}
+tr,td{
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--stone-150);
+
+}
+li{
+    padding-bottom: 15px;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:375px){
+   .container{
+        max-width: 100vw;
+        border-radius: none;
+   } 
+   body{
+    margin:0;
+    padding: 0;
+   }
+}
