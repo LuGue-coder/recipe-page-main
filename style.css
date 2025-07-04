@@ -94,9 +94,13 @@ li{
    .container{
         max-width: 100vw;
         border-radius: none;
+        margin-top:auto;
    } 
    body{
-    margin:0;
-    padding: 0;
+        margin:0;
+        padding: 0;
+   }
+   img{
+
    }
 }
